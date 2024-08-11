@@ -1,0 +1,110 @@
+.navabr {
+  height: 100px;
+  width: 100%;
+  border-bottom: 1px solid #e4e4e4;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-main {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input-icon-div {
+  display: flex;
+  align-items: center;
+}
+
+.navlink {
+  margin-left: 4rem;
+  color: #1b1b1b;
+  text-decoration: none;
+}
+.navlink:hover {
+  border-bottom: 1px solid #1b1b1b;
+}
+.logo-div h2 {
+  font-size: 24px;
+}
+
+.icon-div {
+  margin-left: 1rem;
+}
+.icon-div i {
+  margin-left: 1.5rem;
+  font-size: 22px;
+}
+
+.input-div input {
+  font-family: "Poppins";
+  padding: 0.6rem 1.2rem;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  background-color: #f5f5f5;
+}
+.navbar-container-mobile {
+  display: none !important;
+}
+.navbar-main-mobile {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 0rem;
+}
+.navabr-mobile {
+  display: flex;
+  justify-content: center;
+}
+.hanbarger i {
+  font-size: 24px;
+}
+.showhambarger {
+  background-color: red;
+  position: absolute;
+}
+
+@media screen and (max-width: 1320px) {
+  .navbar-main {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1002px) {
+  .navbar-main {
+    width: 95%;
+  }
+  .navlink {
+    margin-left: 2rem;
+  }
+  .icon-div i {
+    margin-left: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 818px) {
+  .navbar-main {
+    width: 97%;
+  }
+  .navlink {
+    margin-left: 2rem;
+  }
+  .icon-div i {
+    margin-left: 0.5rem;
+  }
+  .icon-div {
+    margin-left: 1rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .navbar-container {
+    display: none;
+  }
+
+  .navbar-container-mobile {
+    display: block !important ;
+  }
+}
