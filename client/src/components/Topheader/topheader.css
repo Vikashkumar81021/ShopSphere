@@ -5,26 +5,24 @@
   display: flex;
   justify-content: space-between;
 }
-
 .para-2 {
   color: #fff;
   padding: 0.8rem 0rem;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.2px;
 }
-
 .para-3 {
   color: #fff;
   padding: 0.8rem 6rem 0.8rem 0rem;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.2px;
 }
-
-.shopnow {
-  color: white;
+.shop-now {
+  color: #fff;
   font-weight: bold;
   margin-left: 1rem;
 }
 
-@media screen and (max-width: 800px) {
+/* reponsive header */
+@media screen and (max-width: 870px) {
   .para-2 {
     font-size: 12px;
     padding: 1.2rem 0rem;
@@ -37,16 +35,15 @@
 
 @media screen and (max-width: 730px) {
   .para-2 {
-    padding-left: 1.2rem;
+    padding-left: 2rem;
+    width: 100%;
   }
 }
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 699px) {
   .para-3 {
     padding: 1.2rem 2rem;
   }
 }
-
 @media screen and (max-width: 634px) {
   .header {
     height: 80px;

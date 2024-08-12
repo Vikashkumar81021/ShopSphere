@@ -1,0 +1,19 @@
+.hero-section-main-container {
+  display: flex;
+  justify-content: center;
+}
+.hero-section-main {
+  display: flex;
+  width: 80%;
+  margin-top: 2rem;
+}
+.filtersDiv {
+  height: 40vh;
+  width: 25%;
+
+  border-right: 1px solid #e4e4e4;
+}
+.sliderDiv {
+  height: 40vh;
+  width: 80%;
+}

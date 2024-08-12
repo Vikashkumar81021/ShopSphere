@@ -1,46 +1,59 @@
 import "./Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import {
   faHeart,
-  faCartShopping,
   faBars,
+  faCartShopping,
+  faXmark,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
+  const showNavigationMenu = () => {
+    const hamburgerDiv = document.querySelector(".showhamburgerdiv");
+    hamburgerDiv.style.left = "0"; // Ensure it slides into view from the right
+    hamburgerDiv.style.display = "block"; // Make sure it's visible
+  };
+
+  const hideNavigationMenu = () => {
+    const hamburgerDiv = document.querySelector(".showhamburgerdiv");
+    hamburgerDiv.style.left = "100%"; // Slide out of view
+    setTimeout(() => {
+      hamburgerDiv.style.display = "none"; // Hide it after transition
+    }, 300); // Adjust this timing based on your transition duration
+  };
+
   return (
     <>
       <div className="navbar-container">
-        <div className="navabr">
+        <div className="navbar">
           <div className="navbar-main">
             <div className="logo-div">
-              <h2>ShopSphere</h2>
+              <h2>Exclusive</h2>
             </div>
             <div className="links-div">
-              <a href="#" className="navlink">
+              <Link to="/" className="navLink">
                 Home
-              </a>
-              <a href="#" className="navlink">
+              </Link>
+              <Link to="/contact" className="navLink">
+                Contact
+              </Link>
+              <Link to="/about" className="navLink">
                 About
-              </a>
-              <a href="#" className="navlink">
-                contact
-              </a>
-              <a href="#" className="navlink">
+              </Link>
+              <Link to="/signup" className="navLink">
                 Sign Up
-              </a>
+              </Link>
             </div>
-            <div className="input-icon-div">
+            <div className="input-and-icons-div">
               <div className="input-div">
-                <input type="text" placeholder="what are you looking for" />
+                <input type="text" placeholder="What are you looking for?" />
               </div>
-              <div className="icon-div">
+              <div className="icons-div">
                 <i>
-                  {" "}
                   <FontAwesomeIcon icon={faHeart} />
                 </i>
-
                 <i>
-                  {" "}
                   <FontAwesomeIcon icon={faCartShopping} />
                 </i>
               </div>
@@ -50,45 +63,54 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-container-mobile">
-        <div className="navabr-mobile">
+        <div className="navbar-mobile">
           <div className="navbar-main-mobile">
             <div className="logo-div-mobile">
-              <h2>ShopSphere</h2>
-            </div>
-            <div className="hanbarger">
-              <i>
-                {" "}
-                <FontAwesomeIcon icon={faBars} />
-              </i>
+              <h2>Exclusive</h2>
             </div>
 
-            <div className="showhambarger">
-              <div className="links-div-mobile">
-                <a href="#" className="navlink-mobile">
-                  Home
-                </a>
-                <a href="#" className="navlink-mobile">
-                  About
-                </a>
-                <a href="#" className="navlink-mobile">
-                  contact
-                </a>
-                <a href="#" className="navlink-mobile">
-                  Sign Up
-                </a>
-              </div>
-              <div className="input-icon-div-mobile">
-                <div className="input-div-mobile">
-                  <input type="text" placeholder="what are you looking for" />
+            <div className="hamburger-main">
+              <FontAwesomeIcon icon={faBars} onClick={showNavigationMenu} />
+            </div>
+
+            <div className="showhamburgerdiv">
+              <div className="mobile-top-main">
+                <div className="logo-div-mobile">
+                  <h2>Exclusive</h2>
                 </div>
-                <div className="icon-div-mobile">
+
+                <div className="hamburger-main">
+                  <FontAwesomeIcon
+                    icon={faXmark}
+                    onClick={hideNavigationMenu}
+                    className="crossIcon"
+                  />
+                </div>
+              </div>
+
+              <div className="links-div-mobile">
+                <Link to="/" className="navLink-mobile">
+                  Home
+                </Link>
+                <Link to="/contact" className="navLink-mobile">
+                  Contact
+                </Link>
+                <Link to="/about" className="navLink-mobile">
+                  About
+                </Link>
+                <Link to="/signup" className="navLink-mobile">
+                  Sign Up
+                </Link>
+              </div>
+              <div className="input-and-icons-div-mobile">
+                <div className="input-div-mobile">
+                  <input type="text" placeholder="What are you looking for?" />
+                </div>
+                <div className="icons-div-mobile">
                   <i>
-                    {" "}
                     <FontAwesomeIcon icon={faHeart} />
                   </i>
-
                   <i>
-                    {" "}
                     <FontAwesomeIcon icon={faCartShopping} />
                   </i>
                 </div>

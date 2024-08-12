@@ -1,14 +1,14 @@
-import "./topheader.css";
+import "./topHeader.css";
 
-const Topheader = () => {
+const TopHeader = () => {
   return (
     <>
       <div className="main-header">
         <div className="header">
-          <p className="para1"></p>
+          <p className="para-1"></p>
           <p className="para-2">
-            Summer Sale For all Swim and Suts And Express Delivery -off 50%!{" "}
-            <a href="#" className="shopnow">
+            Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+            <a href="#" className="shop-now">
               ShopNow
             </a>
           </p>
@@ -19,4 +19,4 @@ const Topheader = () => {
   );
 };
 
-export default Topheader;
+export default TopHeader;

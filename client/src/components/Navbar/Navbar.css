@@ -1,71 +1,123 @@
-.navabr {
+.navbar {
   height: 100px;
-  width: 100%;
+  width: 100vw;
   border-bottom: 1px solid #e4e4e4;
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
 }
-
 .navbar-main {
   width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.input-icon-div {
+.input-and-icons-div {
   display: flex;
   align-items: center;
 }
-
-.navlink {
+.navLink {
   margin-left: 4rem;
   color: #1b1b1b;
   text-decoration: none;
 }
-.navlink:hover {
+.navLink:hover {
   border-bottom: 1px solid #1b1b1b;
 }
 .logo-div h2 {
-  font-size: 24px;
+  font-size: 28px;
 }
-
-.icon-div {
+.icons-div {
   margin-left: 1rem;
 }
-.icon-div i {
-  margin-left: 1.5rem;
-  font-size: 22px;
+.icons-div i {
+  margin-left: 1.2rem;
+  font-size: 26px;
 }
-
 .input-div input {
   font-family: "Poppins";
-  padding: 0.6rem 1.2rem;
+  padding: 0.8rem 1.4rem;
   border: none;
   outline: none;
   border-radius: 2px;
   background-color: #f5f5f5;
 }
+
 .navbar-container-mobile {
-  display: none !important;
+  display: none;
 }
+.navbar-mobile {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #e4e4e4;
+}
+
 .navbar-main-mobile {
   width: 95%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.8rem 0rem;
+  padding: 0.6rem 0rem;
+  position: relative;
+  transition: all 1s ease-in-out;
 }
-.navabr-mobile {
-  display: flex;
-  justify-content: center;
-}
-.hanbarger i {
+.hamburger-main i {
   font-size: 24px;
 }
-.showhambarger {
-  background-color: red;
+.showhamburgerdiv {
+  background-color: #e4e4e4;
   position: absolute;
+  top: 0%;
+  right: -65%;
+  display: none;
+  width: 100vw;
 }
+
+.links-div-mobile {
+  display: flex;
+  flex-direction: column;
+  padding: 0.6rem 0.6rem 0.5rem 0.6rem;
+}
+.navLink-mobile {
+  margin-bottom: 0.6rem;
+  text-decoration: none;
+  color: #1b1b1b;
+  font-size: 18px;
+}
+
+.input-div-mobile input {
+  font-family: "Poppins";
+  padding: 0.8rem 1.4rem;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  background-color: #f5f5f5;
+  width: 80%;
+  margin-left: 0.6rem;
+}
+.icons-div-mobile {
+  padding-left: 0.6rem;
+  margin: 0.8rem 0rem 0.8rem 0rem;
+}
+.icons-div-mobile i {
+  font-size: 22px;
+}
+.mobile-shopping {
+  margin-left: 0.5rem;
+}
+.mobile-top-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 0.6rem;
+  border-bottom: 1px solid #b69797;
+}
+.crossIcon {
+  font-size: 24px;
+  margin-right: 1.5rem;
+}
+/* responsive navbar */
 
 @media screen and (max-width: 1320px) {
   .navbar-main {
@@ -73,38 +125,26 @@
   }
 }
 
-@media screen and (max-width: 1002px) {
+@media screen and (max-width: 1080px) {
   .navbar-main {
     width: 95%;
   }
-  .navlink {
+  .navLink {
     margin-left: 2rem;
   }
-  .icon-div i {
-    margin-left: 0.5rem;
+  .icons-div i {
+    margin-left: 0.8rem;
+  }
+  .icons-div {
+    margin-left: 0.3rem;
   }
 }
 
-@media screen and (max-width: 818px) {
-  .navbar-main {
-    width: 97%;
-  }
-  .navlink {
-    margin-left: 2rem;
-  }
-  .icon-div i {
-    margin-left: 0.5rem;
-  }
-  .icon-div {
-    margin-left: 1rem;
-  }
-}
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 890px) {
   .navbar-container {
     display: none;
   }
-
   .navbar-container-mobile {
-    display: block !important ;
+    display: block;
   }
 }
