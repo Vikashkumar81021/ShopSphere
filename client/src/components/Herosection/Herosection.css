@@ -15,5 +15,21 @@
 }
 .sliderDiv {
   height: 40vh;
-  width: 80%;
+  width: 86%;
+  margin-left: 5rem;
+}
+.filterLinks {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.filterLinks a {
+  color: #0c0c0c;
+  text-decoration: none;
+}
+.filterLinks a:hover {
+  color: #4c3c3c;
 }

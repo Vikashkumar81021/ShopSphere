@@ -7,7 +7,7 @@
   overflow-x: hidden;
 }
 .navbar-main {
-  width: 80%;
+  width: 89%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,6 +23,10 @@
 }
 .navLink:hover {
   border-bottom: 1px solid #1b1b1b;
+}
+/* addd for initaila time */
+.logo-div {
+  margin-left: 150px;
 }
 .logo-div h2 {
   font-size: 28px;
