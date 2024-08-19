@@ -7,7 +7,6 @@
 .main-cards-div {
   width: 80%;
   display: flex;
-  overflow-y: scroll;
 }
 .card-div {
   width: 350px;
@@ -42,6 +41,52 @@
 .card-text {
   font-weight: 600;
 }
+.view-all-product {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.4rem;
+}
+
+.view-all-products-btn {
+  background-color: #db4444;
+  padding: 0.8rem 4rem;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  color: white;
+}
+
+.total-review p {
+  color: #7f7f7f;
+  font-weight: 500;
+  margin-left: 1rem;
+}
+.rating-plus-review {
+  display: flex;
+  align-items: center;
+}
+
+.add-to-cartMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.add-to-cart {
+  background-color: black;
+  color: white;
+  border: none;
+  width: 100%;
+  outline: none;
+  padding: 0.4rem;
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
 .badge-div {
   background-color: #db4444;
   padding: 0rem 1rem;
